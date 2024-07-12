@@ -1,7 +1,7 @@
-import React from "react";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/website/logo.png";
 import { IoMdSearch } from "react-icons/io";
 import { IoMdCart } from "react-icons/io";
+import DarkMode from "./DarkMode";
 const Navbar = () => {
   return (
     <div
@@ -57,6 +57,10 @@ const Navbar = () => {
               </span>
               <IoMdCart className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button>
+            {/* Darkmode Switch */}
+            <div>
+              <DarkMode />
+            </div>
           </div>
         </div>
       </div>
