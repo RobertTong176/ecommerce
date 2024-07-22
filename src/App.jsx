@@ -8,6 +8,9 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import TopProducts from "./components/TopProducts/TopProducts";
 import Banner from "./components/Banner/Banner";
+import Subscribe from "./components/Subscribe/Subscribe";
+import Comments from "./components/Testimonials/Testimonials";
+import Footer from "./components/Footer/Footer";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -25,6 +28,10 @@ function App() {
       <Products />
       <TopProducts />
       <Banner />
+      <Subscribe />
+      <Products />
+      <Comments />
+      <Footer />
     </div>
   );
 }

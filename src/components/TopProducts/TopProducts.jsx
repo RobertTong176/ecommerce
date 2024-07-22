@@ -32,14 +32,14 @@ const TopProducts = () => {
     alert("Chức năng đang làm");
   };
   return (
-    <div>
+    <div className="dark:bg-gray-900">
       <div className="container">
         {/* Header section */}
         <div className="text-left mb-24">
           <p data-aos="fade-up" className="text-primary text-sm">
             Top Rated Products for you
           </p>
-          <h1 data-aos="fade-up" className="font-bold text-3xl">
+          <h1 data-aos="fade-up" className="font-bold text-3xl dark:text-white">
             Best Products
           </h1>
           <span data-aos="fade-up" className="text-xs text-gray-400">
@@ -78,7 +78,7 @@ const TopProducts = () => {
                   <FaStar className="text-primary" />
                   <FaStar className="text-primary" />
                 </div>
-                <h1 className="font-bold text-xl">{data.title}</h1>
+                <h1 className="font-bold text-xl dark:text-white">{data.title}</h1>
                 <p
                   className="text-gray-500 group-hover:text-white
                 duration 300 text-sm line-clamp-2

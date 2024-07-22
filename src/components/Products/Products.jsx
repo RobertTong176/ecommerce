@@ -48,8 +48,8 @@ const ProductsData = [
 
 const Products = () => {
   return (
-    <div className="mt-14 mb-12">
-      <div className="container">
+    <div className="pt-14 dark:bg-gray-900">
+      <div className="container ">
         {/* Header section */}
         <div
           className="text-center mb-10 max-w-[600px]
@@ -58,7 +58,7 @@ const Products = () => {
           <p data-aos="fade-up" className="text-sm text-primary">
             Top Selling Products for you
           </p>
-          <h1 data-aos="fade-up" className="text-3xl font-bold">
+          <h1 data-aos="fade-up" className="text-3xl font-bold dark:text-white">
             Products
           </h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
@@ -87,15 +87,23 @@ const Products = () => {
                 object-cover rounded-md"
                 />
                 <div>
-                  <h3 className="font-semibold">{data.title}</h3>
+                  <h3 className="font-semibold dark:text-white">
+                    {data.title}
+                  </h3>
                   <p className="text-sm text-gray-600">{data.color}</p>
                   <div className="flex items-center gap-1">
-                    <FaStar className="text-yellow-400" />
-                    <span>{data.rating}</span>
+                    <FaStar className="text-yellow-400 " />
+                    <span className="dark:text-white">{data.rating}</span>
                   </div>
                 </div>
               </div>
             ))}
+          </div>
+          {/* view all button */}
+          <div className="flex justify-center">
+            <button className="text-center mt-10 bg-primary py-1 px-3 text-white rounded-md">
+              View All Products
+            </button>
           </div>
         </div>
       </div>
